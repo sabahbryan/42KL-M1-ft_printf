@@ -19,17 +19,17 @@
 # include <stdint.h>
 
 // Mimics the behavior of the standard printf function
-int	ft_printf(const char *type, ...);
-int	ft_conversion(va_list args, const char type);
+int		ft_printf(const char *type, ...);
+int		ft_conversion(va_list args, const char type);
 
 // Conversion functions
-int	print_char(char c);
-int	print_str(char *str);
-int	print_ptr(unsigned long long ptr);
-int	print_nbr(int n);
-int	print_unsigned(unsigned int n);
-int	print_hex(unsigned int num, const char type);
-int	print_percent();
+int		print_char(char c);
+int		print_str(char *str);
+int		print_ptr(unsigned long long ptr);
+int		print_nbr(int n);
+int		print_unsigned(unsigned int n);
+int		print_hex(unsigned int num, const char type);
+int		print_percent(void);
 
 // Helper functions
 int		hex_len(unsigned int num);
